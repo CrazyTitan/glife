@@ -23,22 +23,24 @@ if magik >= 6 and spellbefshild = 1 and tobiQW = 0:gt 'tobiQW', 'start'
 
 if rembedr = 0:
 	'<center><img src="images/etogame/bedr.jpg"></center>'
-	'Tight little room with a <a href="exec:gt ''bed'', ''start''">double bed</a> and an <a href="exec:gt ''budilnik'', ''start''">alarm clock</a>. Near the entrance is a small wooden <a href="exec:gt ''clothing'', ''view_clothing_list'', ''wardrobe''">wardrobe</a>. The windows are closed with faded heavy curtains.'
+	'A tight, little room with a <a href="exec:gt ''bed'', ''start''">double bed</a> and an <a href="exec:gt ''budilnik'', ''start''">alarm clock</a>.' 
+	'An old <a href="exec:gt ''clothing'', ''view_clothing_list'', ''wardrobe''">wardrobe</a> made out of wood stands near the door to the corridor. The windows are closed with faded, heavy curtains.'
 else
 	'<center><img src="images/etogame/bedr2.jpg"></center>'
-	'Bright and beautiful room, with a nice <a href="exec:gt ''bed'', ''start''">double bed</a>. Near the entrance is a modern <a href="exec:gt ''clothing'', ''view_clothing_list'', ''wardrobe''">wardrobe</a>. Against the wall are a table and a <a href="exec:gt ''mirror'', ''start''">mirror</a>.'
+	'A bright and beautiful room, with a large, kingsized <a href="exec:gt ''bed'', ''start''">double bed</a>.'
+	'A modern <a href="exec:gt ''clothing'', ''view_clothing_list'', ''wardrobe''">wardrobe</a> stands near the door to the corridor. At a wall stand a make-up table with a mirror <a href="exec:gt ''mirror'', ''start''">mirror</a>on it.'
 end
 
 if $clothingworntype = 'nude':
-	$nude = 'The corridor'
+	$nude = 'Go into the corridor'
 else
 	$nude = 'Get dressed'
 end
 
 if husbandrinkday = daystart:
-	if husbanstrapon = 1:'Drunken husband sleeps on the bed with butt plug in his ass.'
-	if husbanstrapon = 2:'Drunken husband sleeps on the bed after you have put a dildo up his ass.'
-	if husbanstrapon = 3:'Drunken husband sleeps on the bed after you fucked him with a strapon.'
+	if husbanstrapon = 1:'Your drunken husband sleeps on the bed, with a butt plug up his ass.'
+	if husbanstrapon = 2:'Your drunken husband sleeps on the bed, after you''ve put a dildo up his ass.'
+	if husbanstrapon = 3:'Your drunken husband sleeps on the bed, after you''ve fucked him with a strapon.'
 end
 if husband > 0 and husbandrink ! 10 and husbandrinkday ! daystart:
 	if hour > 22 or hour < 7:'<a href="exec:gt ''husb'', ''start''">Husband is sleeping on the bed.</a>'
@@ -46,12 +48,12 @@ end
 
 if husbandrink = 11 and husbanstrapon > 0 and husbandrinkday ! daystart:
 	cla
-	'Your husband approached you and said, "Honey my ass hurts do you know if maybe I fell yesterday"'
+	'Your husband approaches you and asks, "Honey, my ass hurts, like a lot, do you know why?"'
 
 	act 'Lie':
 		cla
 		husbanstrapon = 0
-		'"No dear, I do not know" you said making an innocent face. Husband shrugged and walked away'
+		'"No dear, I do''nt know anything", you answer, trying to look as innocent as possible. He shruggs and walks away'
 
 		act 'Finish':gt 'bedr'
 	end
@@ -59,9 +61,9 @@ if husbandrink = 11 and husbanstrapon > 0 and husbandrinkday ! daystart:
 	act 'Confess':
 		cla
 
-		if husbanstrapon = 1:'"Honey you were so drunk last night that I decided to teach you a lesson and put a anal plug in your ass. I''ll never do it again, forgive me please" you said.'
-		if husbanstrapon = 2:'"Dear, I wanted to make you a happy so I started to give you a blowjob, but you did not finish, so I inserted a finger into your ass, but once again you did not finish so I took a dildo and you burst, I even gave you a secong blowjob. Forgive me, but you enjoyed it so much that I could not stop. I just wanted to make you happy dear" you lied to your husband.'
-		if husbanstrapon = 3:'"Dear, I wanted to make you a happy so I started to give you a blowjob, but you did not finish, so I inserted a finger into your ass, but once again you did not finish when I put in a second finger you began to move your ass towards my fingers moaning heavily, I thought that you like it so I put on a strapon. You enjoyed it so much that you finished over and over again, and I continued until I was tired then licked all the sperm off your body and went to sleep. I just wanted to make you happy and you were enjoying it although you do not remember it. Forgive me please" you lied to your husband.'
+		if husbanstrapon = 1:'"Honey, you were so drunk last night, that I decided to teach you a lesson and put a anal plug up your ass. I''ll never do it again, forgive me please", you say.'
+		if husbanstrapon = 2:'"Dear, I wanted to make you happy, so I started to give you a blowjob, but you didn''t cum, so I inserted a finger into your asshole, but you still didn''t cum, then I took a small dildo and some lube and put in your ass, I''ve never seen you cum like that before. I even gave you a secong blowjob. Forgive me, but you seemed to enjoy it so much, that I could''t stop. I just wanted to make you happy.", you lie to him.'
+		if husbanstrapon = 3:'"Dear, I wanted to make you a happy, so I started to give you a blowjob, but you didn''t cum, so I inserted a finger into your asshole, but you still didn''t cum. When I put in a second finger you began to move your ass towards my fingers moaning heavily, I thought that you like it, so I put on a strapon. You enjoyed it so much that you finished over and over again, and I continued until I was tired. I then licked all the cum off your body and went to sleep. I just wanted to make you happy and you were enjoying it. Forgive me please", you lie him.'
 
 		if harakHusb = 2:
 			husbizvradd = 0
@@ -71,18 +73,18 @@ if husbandrink = 11 and husbanstrapon > 0 and husbandrinkday ! daystart:
 			divorced += 1
 			fingal += 1
 			minut += 120
-			'The next thing you feel is a powerful punch in the face. When you came back to your senses you realized that your husband and his things were gone. He filed for divorce.'
+			'The next thing you feel is a powerful punch in the face. When you come back to your senses, you realize that your husband and his things are gone. He left a note, telling you he is going to file for divorce.'
 		elseif harakHusb = 1:
 			if husbanstrapon = 1:
-				'"Look, do not do it again!" he said and left.'
+				'"Look, do not do it again!", he says and storms off angry.'
 			elseif husbanstrapon = 2:
 				husbizvradd += 1
-				'"Do not do it again, I''m still a man and I''m not supposed to get fucked in my ass!" he said and left.'
+				'"Do not do it again, I''m still a man and I''m not supposed to get fucked in my ass!", he says and storms off angry.'
 
 			elseif husbanstrapon = 3:
 				if intel > 40 or izvratH = 1:
 					husbharmin += 1
-					'"Are you serious, I''m not a bitch that wanted to be fucked!" he yelled, but then you started to cry and said that you only wanted to please him, he looked at you and said, sighing, "Yes, I believe you wanted to please me, but do not do it again."'
+					'"Are you serious, I''m not some kind of bitch, that wants to get fucked up the arse!" he yells at you. You start to cry and say that you only wanted to please him, he looks at you and says, sighting, "Don''t cry sweetie, I believe you, but do not do it again."'
 				elseif intel <= 40:
 					husbizvradd = 0
 					husbharmin = 0
@@ -91,18 +93,19 @@ if husbandrink = 11 and husbanstrapon > 0 and husbandrinkday ! daystart:
 					divorced += 1
 					fingal += 1
 					minut += 120
-					'The next thing you feel is a powerful punch in the face. When you came back to your senses you realized that your husband and his things were gone. He filed for divorce.'
+			'The next thing you feel is a powerful punch in the face. When you come back to your senses, you realize that your husband and his things are gone. He left a note, telling you he is going to file for divorce.'
 				end
 			end
 		elseif harakHusb = 0:
 			if husbanstrapon = 1:
-				'"I''m sorry I will not get so drunk again, " he said and left.'
+				'"I''m sorry I will not get that drunk again, " he says and leaves the room.'
 			elseif husbanstrapon = 2:
 				husbizvradd += 1
-				'"You''re so thoughtful, instead of scolding me, you''re still wanted to make me happy, thank you dear." he said and left.'
+				'"You''re so thoughtful, instead of scolding me, you still wanted to make me happy, thank you dear." he says and leaves the room.'
 			elseif husbanstrapon = 3:
 				husbizvradd += 1
-				'"Did I really like it?" he asked. You nodded. "Well then, thank you dear, but the next time you should ask me first!" he said, and left.'
+				'"Did I really like it?" he asks. You nod.'
+				'"Well then, thank you dear, but the next time you should ask me first!" he says and leaves the room.'
 			end
 		end
 
@@ -112,10 +115,10 @@ end
 
 if husbandrink = 10 and hour > 20 and hour < 23 and husbanstrapon = 0:
 	'<<$husName>> came home drunk and fell asleep on the bed.'
-	'"That pig" you thought and then you came up with an idea "Maybe I should teach him a lesson so he won''t get drunk again"'
+	'<i>That pig!</i>, you think, but an idea springs to your mind, <i>Maybe I should teach him a lesson, so he won''t get drunk again</i>'
 
 	if analplug = 1:
-		act 'Insert butt plug in his ass':
+		act 'Insert a butt plug in his ass':
 			cla
 			*clr
 			husbandrinkday = daystart
@@ -124,13 +127,13 @@ if husbandrink = 10 and hour > 20 and hour < 23 and husbanstrapon = 0:
 			minut += 10
 			'<center><img src="images/img/hasb/h0.jpg"></center>'
 
-			if analplugin = 1:'You pull the plug out of your own anus and immediately shove it up your husbands ass.'
+			if analplugin = 1:'You pull the plug out of your own anus and shove it up his ass.'
 			if analplugin = 0:'You go take an anal plug and put it into his ass.'
 
-			'<<$husName>> moved, but did not wake up'
+			'<<$husName>> moved, but he doesn''t wake up'
 
 			if dildo > 0:
-				act 'Insert Dildo':
+				act 'Insert a dildo into his ass':
 					cla
 					*clr
 					minut += 20
@@ -139,14 +142,14 @@ if husbandrink = 10 and hour > 20 and hour < 23 and husbanstrapon = 0:
 					cumlip += 1
 					horny += 30
 					'<center><img src="images/img/hasb/h1.jpg"></center>'
-					'You pull out the plug and started to insert dildo in its place, <<$husName>> did not even budge. You began to slowly move the dildo inside trying not to wake your husband. Then in front of your face his cock started to rise, and <<$husName>> began to moan softly, but never woke up. With dildo in his ass, his dick began to throb ready to finish. You touched his penis with your tongue, you took the penis in your mouth and immediately he started to cum, you swallowed it and cleaning his cock from the remnants of cum, put his pants back on.'
+					'You pull out the plug and replace with it with a dildo, <<$husName>> did not even budge. You slowly move the dildo in and out, trying not to wake him up. You notice his cock starts to get rock hard, and <<$husName>> starts to moan softly, but is still asleep. With the dildo in his ass, his dick starts to throb, it seems like he is going to cum. You take his dick in your mouth and you don''t need to suck on it for long. He starts to cum, you swallow it and completely clean his cock. You carefully put back on his underpants.'
 
 					act 'Finish':gt 'bedr'
 				end
 			end
 
 			if strapon > 0:
-				act 'Strapon':
+				act 'Use the strapon':
 					cla
 					*clr
 					minut += 20
@@ -155,7 +158,7 @@ if husbandrink = 10 and hour > 20 and hour < 23 and husbanstrapon = 0:
 					cumlip += 1
 					horny += 30
 					'<center><img src="images/img/hasb/h2.jpg"></center>'
-					'You put on the strapon and pulling out the plug slowly start to put it in his ass, <<$husName>> began to move but did not wake up. You began to slowly move your hips trying not to wake him. Then in front of your face his cock started to rise, and <<$husName>> began to moan softly, but never woke up. Realizing that he won''t wake up you start to move faster and not hesitating drove the entire length of the strapon in his ass. His cock stood up and you started to stroke it, feeling that he is about to finish you took the penis in your mouth and immediately he started to cum, you swallowed it and cleaning his cock from the remnants of cum, put his pants back on.'
+					'You put on the strapon and pull out the butt plug. You gently move the shaft of the strapon inside his ass, <<$husName>>  moves but doesn''t wake up. You continue to slowly move it in and out, trying not to wake him. You notice his cock is getting rock hard and <<$husName>> starts to moan softly, still not waking up. Hopeing that he won''t wake up, you increase your speed and push the entire length of the strapon into his has. You see his hard dick and you start to stroke it in addition to pounding him like a little bitch. Realizing he is not far from cumming, you pull out and funish him by giving him a blowjob. He cums inside it, you swallow it down and clean his cock. You carefully put back on his underpants.'
 
 					act 'Finish':gt 'bedr'
 				end
@@ -167,20 +170,20 @@ if husbandrink = 10 and hour > 20 and hour < 23 and husbanstrapon = 0:
 end
 
 if tanga = 0 and clrbelo > 0:
-	act 'Wear Underwear':
+	act 'Wear underwear':
 		cla
 		tanga = 1
 		gt 'bedr'
 	end
 else
-	act 'Remove Underwear':
+	act 'Don''t wear underwear':
 		cla
 		tanga = 0
 		gt 'bedr'
 	end
 end
 if sick >= 1:
-	act 'Go to sleep (Illness)':
+	act 'Go to sleep (You''re sick)':
 		cla
 		*clr
 		minut += 240
@@ -200,7 +203,7 @@ end
 if dur > 0:'You have hidden <<dur>> doses pale lady'
 
 if dur > 0 and narkday ! daystart:
-	act 'Sniff pale lady (0:05)':
+	act 'Take some coke (0:05)':
 		cla
 		*clr
 		minut += 5
@@ -212,7 +215,7 @@ if dur > 0 and narkday ! daystart:
 		nark += 10
 		dur -= 1
 		'<center><img src="images/etogame/dur.jpg"></center>'
-		'You sniff dose of powder, then you start to feel just great.'
+		'You take a small dose of coke and not long after you just start to feel great.'
 
 		act 'Leave':gt $curloc
 	end
@@ -222,7 +225,7 @@ if horny >= 50:
 	act 'Masturbate':gt 'selfplay'
 end
 
-if pornMagazine > 0:'Under the mattress you have hidden pornozhurnal.'
+if pornMagazine > 0:'Under your mattress you hide a porn magazine.'
 
 dynamic $d_read_porn
 

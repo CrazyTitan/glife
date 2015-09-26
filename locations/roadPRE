@@ -6,7 +6,7 @@ fcolor = rgb(0, 0, 0)
 bcolor = rgb(255, 255, 255)
 lcolor = rgb(106, 90, 205)
 '<center><img src="images/picPRE/carPRE.jpg"></center>'
-'Once in the car you immediately dial the phone to call your wife Luda. You explain the situation to her and after finishing drive off to the construction site.'
+'Once in the car you immediately get your phone to call Luda, your wife. You explain the situation to her and after finishing the call, drive off to the construction site.'
 
 act 'Ride':
 	cla
@@ -15,7 +15,8 @@ act 'Ride':
 	clr
 	gs 'statPRE'
 	'<center><img src="images/picPRE/kotPRE.jpg"></center>'
-	'You''ve been on the highway for hours and arrive at the town feeling tired, but before you can get some sleep in a hotel, you need to get a first glance magnitude of the problem you''re dealing with. You follow the directions to the site. Igor calls on the way and tells you, you won''t have to go through a security check'
+	'You''ve been on the highway for hours and arrive at the town feeling tired. But before you can get some sleep in a hotel, you need to get an understanding of the magnitude of the problem you''re dealing with. You follow the directions to the site. Igor calls on the way and tells you that you won''t have to go through a security check.'
+	*nl 
 	'You arrive and park your car at the site. You can see Igor waving at you from the distance, so you walk up to him.'
 
 	act 'Greet Igor':
@@ -25,10 +26,13 @@ act 'Ride':
 		clr
 		gs 'statPRE'
 		'<center><img src="images/picPRE/igor.jpg"></center>'
-		'You are greeted by Igor. He is obviously concerned about the situation and so without much delay he leads you to the fencing of the pit. It rained not long ago, hence the gound is all muddy, you''re going to have to clean your shoes once you''re back in the hotel.'
-		'"The ladder''s over there" Igor says while pointing to your left.' 
-		'You reach the hole in the ground and peek inside, using your small torchlight from your keybundle. "There seems to be a floor about 5 meters down", you say.'
-		'"Well, what do you think Michael? Shall we go down?" Igor says with a faint adventures glimmer in his eyes.'
+		'You are greeted by Igor. He is obviously concerned about the situation and without much delay he leads you to the pit''s fenced-off entrance. The ground is all muddy due to it having rained not long ago; you''re going to have to clean your shoes once you''re back at the hotel.'
+		*nl 
+		'"The ladder''s over there," Igor informs you while pointing to your left.' 
+		*nl 
+		'You reach the hole in the ground and peek inside using the small flashlight from your keychain. "There seems to be a floor about 5 meters down."'
+		*nl 
+		'"Well, what do you think Michael? Shall we go down?" Igor says with a faint glimmer of adventure in his eyes.'
 
 		act 'Descend':
 			cla
@@ -37,10 +41,13 @@ act 'Ride':
 			clr
 			gs 'statPRE'
 			'<center><img src="images/picPRE/dunPRE.jpg"></center>'
-			'Igor hands you a powerful torch and tells the guard to get the ladder over here. Igor is the first one to go down, once he reaches the bottom, he holds the ladder, so you can savely climb down aswell.'
-			'The cave smells musty and looks all gloomy, but you can breathe and the light from your torch illuminates the walls. You''ve sent a beam into the corridor and see in the distance something that resembles a door.'
-			'"Damn. If any historians would hear about this, they''d be all over our construction site." Igor muttered.'
-			'You walk up to the door and see drawings on it, they resemble people, but with more stickfigure too it.'
+			'Igor hands you a powerful flashlight and tells the guard to get the ladder over here. Igor is the first one to go down, once he reaches the bottom, he holds the ladder so you can safely climb down as well.'
+			*nl 
+			'The cave smells musty and looks all gloomy, but you can still breathe and the light from your flashlight illuminates the walls. You shoot a beam of light into the corridor and in the distance see something that resembles a door.'
+			*nl 
+			'"Damn. If any historians heard about this, they''d be all over this construction site." Igor mutters.'
+			*nl 
+			'You walk up to the door and see drawings on it. They resemble people, but with other stick figures as well.'
 
 			act 'Open the door':
 				cla
@@ -49,9 +56,14 @@ act 'Ride':
 				clr
 				gs 'statPRE'
 				'<center><img src="images/picPRE/dunPRE1.jpg"></center>'
-				'You lean against the door and manage to push it open. "OH SHIT... take a look over there. Human bones." Igor says nervously.'
-				'You take a look at what Igor was pointing at and those are indeed a stack of human bones and skull on top. "Tomb, I suppose." Igor muttered looking apprehensive.'
-				'"Probably", you nod "we can''t rule it out just yet."'
+				'You lean against the door and manage to push it open.'
+				*nl 
+				'"Oh shit!... Take a look over there. Human bones." Igor says nervously.'
+				*nl 
+				'You take a look at what Igor is pointing at and do indeed see a pile of human bones with a skull on top.'
+				*nl 
+				'"A tomb, I suppose." Igor mutters looking apprehensive.'
+				'"Probably", you nod. "We can''t rule it out just yet."'
 
 				act 'Go further':
 					cla
@@ -60,8 +72,10 @@ act 'Ride':
 					clr
 					gs 'statPRE'
 					'<center><img src="images/picPRE/dunPRE2.jpg"></center>'
-					'Going further, you enter a room, that resembles somekind of archive, with dozens of old, dusty scrolls inside of racks build into the walls.'
-					'Igor takes one of the scrolls and carefully unrolls it. "The hell? Look at this, this must be some kind of ancient language. I''ll take one with me, see what I can find out about these, maybe I''ll get to decipher it" Igor says.'
+					'Further into the cave, you enter a room that resembles some kind of archive, with dozens of old, dusty scrolls inside of racks built into the walls.'
+					*nl 
+					'Igor takes one of the scrolls and carefully unrolls it. "The hell? Look at this, this must be some kind of ancient language," Igor says. "I''ll take one with me, see what I can find out about these, maybe I''ll get to decipher it."'
+					*nl 
 					'You then notice another door on the other side of the chamber and open it.'
 
 					act 'Enter the room':
@@ -71,10 +85,11 @@ act 'Ride':
 						clr
 						gs 'statPRE'
 						'<center><img src="images/picPRE/dunPRE3.jpg"></center>'
-						'There''s an altar in the center of the room, on which are various pots and several gold amulets and stone figures placed. You continue to look around the room, to find out, what it''s purpose was.'
+						'There''s an altar in the center of the room, upon which are various pots and several gold amulets and stone figures. You continue to look around the room to find out, what it''s purpose is.'
+						*nl 
 						'Looking at the altar, you notice a strange little amulet placed at the very top.'
 
-						act 'Mark sculpture':
+						act 'Note the sculpture':
 							cla
 							*clr
 							energy = 21
@@ -86,9 +101,11 @@ act 'Ride':
 							clr
 							gs 'statPRE'
 							'<center><img src="images/picPRE/amuletPRE.jpg"></center>'
-							'You pick up a strange amulet and examine it. <i>This is clearly very old</i>, you think to yourself. While holding the amulet, you realize that it''s getting warm, almost hot. Suddenly you feel this heat traveling through your entire body.'
-							'You feel a surge of strength inside you. As if you just finished a long jog, but without feeling tired at all.'
-							'Igor enters the room and holds one of the scrolls in his hands. "Huh. Interesting little room.", he says, glancing over the altar, "Well, we have to make a decision, either we fill the catacombs up to the brink with cement or we let someone into these rooms, who know what all this stuff is, maybe it''s worth more than it looks like."'
+							'You pick up a strange amulet and examine it. <i>This is clearly very old</i>, you think to yourself.'
+							*nl 
+							'While holding the amulet, you realize that it''s getting warm, almost hot. Suddenly you feel the heat coursing through your entire body. You feel a surge of strength inside you. As if you just finished a long jog, but without feeling tired at all.'
+							*nl 
+							'Igor enters the room with one of the scrolls in his hands. "Huh. Interesting little room.", he says, glancing over the altar. "Well, we have to make a decision: either we fill the catacombs up to the brink with cement or we let someone into these rooms. Who knows what all this stuff is, maybe it''s worth more than it looks like."'
 
 							act 'You''ve got to think and consult with the chief':
 								cla
@@ -97,8 +114,9 @@ act 'Ride':
 								clr
 								gs 'statPRE'
 								'<center><img src="images/picPRE/dunPRE3.jpg"></center>'
-								'"I''ve got to think about this and consult with the director." you say and put the small amulet into your pocket.'
-								'"Well, one thing''s for sure, we can''t call him from here. Let''s go outside." Igor tell you.'
+								'"I''ve got to think about this and consult with the director," you reply and put the small amulet into your pocket.'
+								*nl 
+								'"Well, one thing''s for sure, we can''t call him from over here. Let''s go outside." Igor tells you.'
 
 								act 'Go back to the surface':
 									cla
@@ -107,10 +125,12 @@ act 'Ride':
 									clr
 									gs 'statPRE'
 									'<center><img src="images/picPRE/kotPRE.jpg"></center>'
-									'You walk together with Igor out of the strange chambers and climb up the ladder, back to the surface'
-									'"It''s gotten pretty late, you should go to the hotel." Igors says, while taking a look at his watch.'
-									'Therefore both of you make your way out of the pit and exchange the obligatory "Goodbye" and "See you tomorrow".'
-									'<i>Damn</i>, you think <i>tomorrow''s going to be a stressful day.</i>'
+									'You walk together with Igor out of the strange chambers and up the ladder, back to the surface.'
+									*nl 
+									'"It''s gotten pretty late, you should go to the hotel." Igor says, while taking a look at his watch.'
+									*nl 
+									'Therefore, both of you make your way out of the pit and exchange the obligatory "Goodbye" and "See you tomorrow".'
+									'<i>Damn</i>, you think, <i>tomorrow''s going to be a stressful day.</i>'
 
 									act 'Go to the hotel.':gt 'otelPRE'
 								end
@@ -122,6 +142,5 @@ act 'Ride':
 		end
 	end
 end
-
 --- roadPRE ---------------------------------
 

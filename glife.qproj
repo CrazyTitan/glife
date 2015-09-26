@@ -616,7 +616,7 @@
       <Location name="Menu.Chosen"/>
       <Location name="Menu.Time"/>
       <Location name="Menu.Destroy"/>
-	  <Location name="Menu.{Treatment}"/>
+      <Location name="Menu.{Treatment}"/>
     </Folder>
     <Folder name="Casino">
       <Location name="casino"/>

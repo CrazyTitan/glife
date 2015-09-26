@@ -4,7 +4,7 @@ $pokraska = {
 	clr
 	cla
 	money -= 750
-	'You ask the barber, if he could dye your hair.'
+	'You ask Mr. Sherman, the barber, if he could dye your hair.'
 	'"Sure.", he says.'
 	'"Which colour would like to have your hair dyed in?"'
 
@@ -22,7 +22,7 @@ $pokraska = {
 				minut += 45
 				hcol = 0
 				'Not even an hour later everything seems to have dried up.'
-				'He removes the dryer hood. "And we''re all done."'
+				'Mr. Sherman removes the dryer hood. "And we''re all done."'
 				'You stand up from the chair and pay him 750 rubles.'
 
 				act 'Leave':gt 'barbershop', 'start'
@@ -44,7 +44,7 @@ $pokraska = {
 				minut += 45
 				hcol = 1
 				'45 minutes later, everything should be dried up.'
-				'He removes the dryer hood. "And we''re all done."'
+				'Mr. Sherman removes the dryer hood. "And we''re all done."'
 				'You stand up from the chair and pay him 750 rubles.'
 
 				act 'Leave':gt 'barbershop', 'start'
@@ -66,7 +66,7 @@ $pokraska = {
 				minut += 45
 				hcol = 2
 				'45 minutes later, everything should be dried up.'
-				'He removes the dryer hood. "And we''re all done."'
+				'Mr. Sherman removes the dryer hood. "And we''re all done."'
 				'You stand up from the chair and pay him 750 rubles.'
 
 				act 'Leave':gt 'barbershop', 'start'
@@ -87,7 +87,7 @@ $pokraska = {
 				minut += 45
 				hcol = 3
 				'About an hour later, everything should be dried up.'
-				'He removes the dryer hood. "And we''re all done."'
+				'Mr. Sherman removes the dryer hood. "And we''re all done."'
 				'You stand up from the chair and pay him 750 rubles.'
 
 				act 'Leave':gt 'barbershop', 'start'
@@ -111,7 +111,7 @@ $cuthair = {
 	cla
 	*clr
 	money -= 500
-	'You approach the barber and ask, "Hi, I would like to get my hair cut."'
+	'You approach Mr. Sherman and ask, "Hi, I would like to get my hair cut."'
 	'"Of course, at which length do you want to have your hair at?", he asks you.'
 
 	if hairlength > 10:
@@ -127,7 +127,7 @@ $cuthair = {
 				minut += 30
 				hairlength = 10
 				'About half an hour later he is done and what''s left from you former hairstyle is a very short buzzcut.'
-				'You stand up and pay him at the counter.'
+				'You stand up and pay Mr. Sherman at the counter.'
 
 				act 'Stand up':gt 'barbershop', 'start'
 			end
@@ -155,7 +155,7 @@ $cuthair = {
 						hbangs = 1
 						hapri = 1
 						'20 minutes later, he is done cutting your hair. And you have now a hairstyle, which barely reaches your earlobes.'
-						'You stand up and pay him at the counter.'
+						'You stand up and pay Mr. Sherman at the counter.'
 
 						act 'Stand up':gt 'barbershop', 'start'
 					end
@@ -167,7 +167,7 @@ $cuthair = {
 						hairlength = 31
 						hapri = 1
 						'20 minutes later, he is done cutting your hair. And you have now a hairstyle, which barely reaches your earlobes.'
-						'You stand up and pay the barber at the counter.'
+						'You stand up and pay Mr. Sherman at the counter.'
 
 						act 'Stand up':gt 'barbershop', 'start'
 					end
@@ -178,7 +178,7 @@ $cuthair = {
 					hairlength = 31
 					hapri = 1
 					'20 minutes later, he is done cutting your hair. And you have now a hairstyle, which barely reaches your earlobes.'
-					'You stand up and pay him at the counter.'
+					'You stand up and pay Mr. Sherman at the counter.'
 
 					act 'Stand up':gt 'barbershop', 'start'
 				end
@@ -207,7 +207,7 @@ $cuthair = {
 						hbangs = 1
 						hapri = 1
 						'20 minutes later, he is done cutting your hair. Your new hairstyle goes down to you chin-line and you have a fringe, covering your forehead.'
-						'You stand up and pay him at the counter.'
+						'You stand up and pay Mr. Sherman at the counter.'
 
 						act 'Stand up':gt 'barbershop', 'start'
 					end
@@ -219,7 +219,7 @@ $cuthair = {
 						hairlength = 81
 						hapri = 1
 						'20 minutes later, he is done cutting your hair.'
-						'You stand up and pay him at the counter.'
+						'You stand up and pay Mr. Sherman at the counter.'
 
 						act 'Stand up':gt 'barbershop', 'start'
 					end
@@ -230,7 +230,7 @@ $cuthair = {
 					hairlength = 31
 					hapri = 1
 					'20 minutes later, he is done cutting your hair.'
-					'You stand up and pay him at the counter.'
+					'You stand up and pay Mr. Sherman at the counter.'
 
 					act 'Stand up':gt 'barbershop', 'start'
 				end
@@ -259,7 +259,7 @@ $cuthair = {
 						hbangs = 1
 						hapri = 1
 						'20 minutes later, he is done cutting your hair. Your hair now goes just to your shoulders and you have a fringe, covering your forehead.'
-						'You stand up and pay him at the counter.'
+						'You stand up and pay Mr. Sherman at the counter.'
 
 						act 'Stand up':gt 'barbershop', 'start'
 					end
@@ -271,7 +271,7 @@ $cuthair = {
 						hairlength = 161
 						hapri = 1
 						'30 minutes later, he is done cutting your hair. Your hair is now just slightly longer, than your shoulders.'
-						'You stand up and pay him at the counter.'
+						'You stand up and pay Mr. Sherman at the counter.'
 
 						act 'Stand up':gt 'barbershop', 'start'
 					end
@@ -282,7 +282,7 @@ $cuthair = {
 					hairlength = 161
 					hapri = 1
 					'20 minutes later, he is done cutting your hair. Your hair is now just slightly longer, than your shoulders.'
-					'You stand up and pay him at the counter.'
+					'You stand up and pay Mr. Sherman at the counter.'
 
 					act 'Stand up':gt 'barbershop', 'start'
 				end
@@ -311,7 +311,7 @@ $cuthair = {
 						hbangs = 1
 						hapri = 1
 						'20 minutes later, he is done cutting your hair. He cut your hair back to about the height of where your bra sits, in addition he made you a fringe, which covers your forehead, as requested.'
-						'You stand up and pay him at the counter.'
+						'You stand up and pay Mr. Sherman at the counter.'
 
 						act 'Stand up':gt 'barbershop', 'start'
 					end
@@ -323,7 +323,7 @@ $cuthair = {
 						hairlength = 261
 						hapri = 1
 						'20 minutes later, he is done cutting your hair. She cut your hair back to about the line where your bra sits.'
-						'You stand up and pay him at the counter.'
+						'You stand up and pay Mr. Sherman at the counter.'
 
 						act 'Stand up':gt 'barbershop', 'start'
 					end
@@ -334,7 +334,7 @@ $cuthair = {
 					hairlength = 261
 					hapri = 1
 					'20 minutes later, he is done cutting your hair. She cut your hair back to about the line where your bra sits.'
-					'You stand up and pay him at the counter.'
+					'You stand up and pay Mr. Sherman at the counter.'
 
 					act 'Stand up':gt 'barbershop', 'start'
 				end
@@ -363,7 +363,7 @@ $cuthair = {
 						hbangs = 1
 						hapri = 1
 						'20 minutes later, he is done cutting your hair. He just cuts the tips of your, barely making it any shorter and as requested, he cut you a nice fringe, which now covers your forehead.'
-						'You stand up and pay the barber at the counter.'
+						'You stand up and pay Mr. Sherman at the counter.'
 
 						act 'Stand up':gt 'barbershop', 'start'
 					end
@@ -375,7 +375,7 @@ $cuthair = {
 						hairlength = 401
 						hapri = 1
 						'20 minutes later, he is done cutting your hair.'
-						'You stand up and pay the barber at the counter.'
+						'You stand up and pay Mr. Sherman at the counter.'
 
 						act 'Stand up':gt 'barbershop', 'start'
 					end
@@ -386,7 +386,7 @@ $cuthair = {
 					hairlength = 401
 					hapri = 1
 					'20 minutes later, he is done cutting your hair.'
-					'You stand up and pay him at the counter.'
+					'You stand up and pay Mr. Sherman at the counter.'
 
 					act 'Stand up':gt 'barbershop', 'start'
 				end
@@ -398,7 +398,7 @@ $cuthair = {
 if $ARGS[0] = 'start':
 	gs 'stat'
 	'<center><b><font color="maroon">The Barber Shop</font></b></center>'
-	'<center>The only barber shop in the area. While he can''t do special hairstyles, he''s cheap and works fast.</center>'
+	'<center>The only barber shop in the area owned by Mr. Sherman. While he can''t do very special hairstyles, he''s cheap and works fast.</center>'
 	clr
 	gs 'stat'
 	fcolor = rgb(0, 0, 0)
@@ -425,7 +425,7 @@ if $ARGS[0] = 'start':
 
 	if hour =< 8 or hour >= 20:
 		cls
-		'The barber shop is closed at the moment, you should probably come back, when he''s in'
+		'The barber shop is closed at the moment, you should probably come back, when Mr. Sherman''s in'
 
 		act 'Leave':minut += 2 & gt 'gorodok'
 
@@ -440,7 +440,7 @@ if money >= 60:
 		cls
 		money -= 60
 		hscrunch += 10
-		'You pay the cashier and bought the small box.'
+		'You pay Mr. Sherman and buy the small box.'
 
 		act 'Move away':gt 'barbershop', 'start'
 	end
@@ -451,11 +451,57 @@ if money >= 80:
 		cls
 		money -= 80
 		hpingrip += 10
-		'You pay the cashier and bought the small box.'
+		'You pay Mr. Sherman and buy the small box.'
 
 		act 'Move away':gt 'barbershop', 'start'
 	end
 end
+
+if barbershop_wrk = 0:
+	act 'Ask for work':
+		cla
+		*clr
+		minut += 5
+		'You walk up to Mr. Sherman, the owner of the barbershop.'
+		'"Hello Mr. Sherman", you greet him.'
+		'"Hello <<$name>>! What can I do for you today?", he asks you in his usual soothing voice.'
+		'"I was wondering if you''re looking for some help around here"'
+		'"Well, I don''t think you have experience as a hairdresser..." He thinks for a second. "..., but my back isn''t the best anymore, so I could use some help keeping the shop clean. It''s not much work, but I''d be happy if you could come in once a day for about an hour. Just come by, when you''re done with school and when I''m still open, obviously."'
+		'You smile cheerfully. "That sound great! What would I have to do?"'
+		'"Well," he says, while looking around and gathering tasks for you. "...,  you''d have to mop the floor here in the main room and the break room in the back as well. Take out all the trash, clean the breakroom kitchen, clean the mirrors, windows, chairs and toilet and of course dust the shelves. It might sound like a lot, but don''t worry, even doing one thing, makes my life easier."'
+		'You think about it for a second, but you guess it won''t be too bad and you could need any amount of money... "I...uhm...hate to ask, but how much would I earn per hour?"'
+		'"Ah yes," Mr. Sherman chuckles. "..., the most important question. Are you alright with 100 rubles per hour?"'
+			
+			act 'Agree to work':
+			cla
+			*nl
+			'"That''s great", you nod. "When can I start?"'
+			'"If you could come back tomorrow, that''d be great."'
+			barbershop_wrk = 1
+				act 'Leave': gt 'barbershop','start'
+			end
+			
+			act 'Think about it':
+			cla
+			*nl
+			'"I guess I''ll think about it some more.", you answer.'
+			'"Sure <<$name>>, come back when you want to work."'
+				act 'Leave': gt 'barbershop','start'
+			end
+	end
+elseif barbershop_wrk = 1 and barbershop_wrk_day ! daystart:
+	act 'Get to work (1h)':
+		cla
+		*clr
+		minut += 60
+		money += 100
+		barbershop_wrk_day = daystart
+		gs 'stat'
+		'You work diligently and fast. You clean the floor, take out the trash, dust off the shelves and wipe some mirrors and windows. Before you know an hour has passed and you''re 100 rubles richer.'
+			act 'Leave': gt 'barbershop','start'
+	end
+end
+
 !!! Maruda Hair Mod
 
 --- barbershop ---------------------------------

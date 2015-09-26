@@ -29,8 +29,8 @@ elseif remsitr = 1:
 	$zal = 'A modern, bright room'
 	$zal2 = 'papered walls with light'
 end
-if TV = 0:$TV = 'a great place for a TV, which you don''t have'
-if TV = 1:$TV = 'an ancient <a href="exec:gt ''TV'', ''start''">TV</a>'
+if TV = 0:$TV = 'a great place for a TV, if you had one.'
+if TV = 1:$TV = 'an old LCD <a href="exec:gt ''TV'', ''start''">TV</a>'
 if TV = 2:$TV = 'a huge plasma <a href="exec:gt ''TV'', ''start''">TV</a>'
 ! WD: Missing Code to buy / Upgrade Sofa, Uninitialised ~ 'divan'
 if divan = 0:$divan = '<a href="exec:gt ''divan'', ''start''">an old sofa</a>'
@@ -43,7 +43,7 @@ if selfPornvidDVD > 0: $selfPornvidDVD = 'You have <a href="exec:Dynamic $selfPo
 !!!
 
 ! WD: Missing Code to buy / Upgrade table, Uninitialised ~ 'stol'
-if stol = 0:$stol = 'decrepit <a href="exec:gt ''stol'', ''start''">table</a>'
+if stol = 0:$stol = 'old wooden <a href="exec:gt ''stol'', ''start''">table</a>'
 if stol = 1:$stol = 'new <a href="exec:gt ''stol'', ''start''">table</a>'
 if obruch > 0:'<br>A hula hoop stands in corner of the room. '
 if skak > 0:'A jump rope is on a shelf. '
@@ -108,10 +108,10 @@ end
 
 if sports = 1:
 	$sportsitr = '<<$sitrpush>><<$sitrpress>><<$sitrskak>><<$sitrobr>><<$sitr_tread>><<$sitryog>>'
-	'The room has enough space for a variety of sport activities:<<$sportsitr>>.'
+	'The room has enough space for a variety of sporting activities:<<$sportsitr>>.'
 end
 
-if suhbelo2 > 0:'<br>Lying on the table are <<suhbelo2>> pieces of dried laundry that need <a href="exec:dynamic $gladbelo">ironing</a>.'
+if suhbelo2 > 0:'<br>Lying on the table are <<suhbelo2>> pieces of dried laundry, that need <a href="exec:dynamic $gladbelo">to be ironed</a>.'
 
 *nl
 !!housegostrand = rand(1, 20)
@@ -119,12 +119,12 @@ if suhbelo2 > 0:'<br>Lying on the table are <<suhbelo2>> pieces of dried laundry
 
 if husband > 0 and husbandrink ! 10 and husbandrinkday ! daystart:
 	if week < 6:
-		if hour > 17 and hour <= 22:'<a href="exec:gt ''husb'', ''start''">On the couch sits husband and watching TV.</a>'
+		if hour > 17 and hour <= 22:'<a href="exec:gt ''husb'', ''start''">Your husband sits on the couch and watches television.</a>'
 	else
 		if hour > 7 and hour < 17:
-			'<a href="exec:gt ''husb'', ''start''">On the couch sits husband and watching TV.</a>'
+			'<a href="exec:gt ''husb'', ''start''">Your husband sits on the couch and watches television.</a>'
 		elseif hour > 17 and hour <= 22:
-			'<a href="exec:gt ''husb'', ''start''">On the couch sits husband and watching TV.</a>'
+			'<a href="exec:gt ''husb'', ''start''">Your husband sits on the couch and watches television.</a>'
 		end
 	end
 end
@@ -146,7 +146,7 @@ if student > 0 and kursovik < 100:
 
 		manna -= 10
 		'<center><img src="images/etogame/study.jpg"></center>'
-		'You sat on the course work and prepared her <<kursovik>> percent.'
+		'You work on your courses homework and are about <<kursovik>> percent done.'
 
 		act 'Exit':gt 'sitr'
 	end
@@ -161,103 +161,102 @@ if zoo >= 6:
 				*clr
 				minut += 30
 				'<center><img src="images/zoo/z1.jpg"></center>'
-				'You call the dog and that the move pushes his wet nose between your legs and lick accepted.'
+				'You call <<$namesob>> and he storms into the living room, wiggling his tail. Upon entering the room, he immediately smells your moist pussy and shoves his cold, wet nose between your legs. <<$namesob>> soon starts to lick your cunt.'
 
 				if harakHusb = 0:
 					zoo += 1
 					horny = 0
 					orgasm += 1
 					husband -= 1
-					'"What''s he doing dear, stop him, " cries the husband'
-					'"I can not, try myself, " you reply.'
-					'<<$husName>> trying to shove the dog, but he growls and snarls. "I can not get it to drive away what to do dear?" he asks.'
-					'"Think of something." you reply, already slightly moaning with pleasure. <<$husName>> begins to pace the room, periodically coming to the dog, but hearing his growl off. While <<$husName>> pacing the room dog began to jump on you.'
-					'"Oh my God, that he was going to do?" shrieked <<$husName>>, see attempts dog jump on you.'
-					'"What you do not clear he wants to fuck me" you said.'
-					'"Dear try again to free" pleaded husband.'
+					'"OH MY GOD, what is he doing?", your husband yells.'
+					'"Help me!", you scream, "He won''t let go!"'
+					'<<$husName>> tries to shoo the dog away, but <<$namesob>> growls and snarls at your husband. "He won''t stop it. What should I do?" he asks.'
+					'"Think of something." you tell him, already moaning slightly with pleasure. <<$husName>> tries to intimmidate the dog, continuously yelling at him, but to no avail. Suddenly your dog jumps on top you.'
+					'"Oh my God, that he is going to do now?" <<$husName>> screams..'
+					'"Isn''t it obvious? He wants to fuck me." you say.'
+					'"Please, try to free yourself", your husband pleads.'
 
 					act 'Try':
 						cla
 						*clr
 						'<center><img src="images/zoo/z2.jpg"></center>'
-						'You reluctantly start trying to push the dog and move away, but it appears to him backwards, and <<$namesob>> leans on you and all your weight is on. You feel his penis rubs against your thighs ischya hole.'
-
+						'You try to push your dog away ang get way from his clutch, but it seems to do just the opposite of what you''ve intended to do. <<$namesob>> now leans on you and you can feel knot on your thigh, trying to find it''s way to your pussy.'
 						if izvratH = 0:
-							'"Oh my God, I can not look at it, " cried the husband slammed the door and ran. Meanwhile, a member of the dog has found a hole and full-pecked you. You moaned and podmahivat him soon you covered orgasm, and after a few seconds dog cum inside you and radosnym ran out into the corridor. My husband came back, and you still were cancer and dog sperm flowed from your pussy.'
-							'"I''ll take him now on euthanasia, " said <<$husName>>'
+							'"Oh my God, I can''t look at this", your husband screams, then storms out of the room, slamming the door behind him. Meanwhile, your dogs knot found it''s way to your pussy and enters it. You moan and it doesn''t take long for you to cum and not long after <<$namesob>> cums inside you aswell. Once he is done pumping his seed into you, he runs back into the corridor. Your husband comes back and you''re still lying on your back, with your dogs spern flowing out of your pussy.'
+							'"I''ll take him now to the vet and have him put to sleep", <<$husName>> tells you.'
 						elseif izvratH = 1:
-							'"Well get off of her, " shouts <<$husName>> at the dog, but close to it does not fit. Meanwhile, a member of the dog has found a hole and full-pecked you. You moaned and podmahivat him and your husband decided that your movement is an attempt to free you cheered "Yes Svetsik so can get more wiggle lose it." Soon you covered orgasm, and after a few seconds dog cum inside you and radosnym ran out into the corridor. Husband looked at you standing cancer hips peremazanymi canine semen flowing out of your pussy.'
-							'"I''ll take him now on euthanasia, " said <<$husName>>'
+							'"Get off her" shouts <<$husName>> at the dog, but your dog doesn''t leave you alone. Meanwhile, your dogs knot found it''s way to your pussy and enters it. You moan, but your husband interprets your movement as an attempt of trying to free yourself. "That''s it <<$name>>, you almost freed yourself."' 
+							'It doesn''t take long for you to cum and not long after <<$namesob>> cums inside you aswell. Once he is done pumping his seed into you, he runs back into the corridor. <<$husName>> looks at you in shook, as your dogs cum flows out of your pussy..'
+							'"I''ll take him now to the vet and have him put to sleep", <<$husName>> tells you.'
 						end
 
-						act 'Allow':
+						act 'Put your dog to sleep':
 							sobaka = 0
 							zoo = 0
 							gt 'sitr'
 						end
 
-						act 'Not authorized':
+
+						act 'It''s just his instincts!':
 							cla
-							'"No, dear, he is not guilty, he has the instincts, I''ll take it for mating and he will calm down, " you said.'
-							'"Well dear, whatever you say."'
+							'"No dear, it''s not his fault, it''s his instincts, just let him do what he''s supposed to do, he''ll eventually stop", you say.'
+							'"Well, whatever you say."'
 
 							act 'Finish':gt 'sitr'
 						end
 					end
 				elseif harakHusb = 1:
-					'"Her dog you absolutely ohrenel, go find yourself on the street bitch and then you froze otpihni it" the husband says.'
-					'"I can not, try myself, " you reply.'
+					'"Your dog is absolutely crazy, couldn''t you go out on the streets and find him some bitch to hump?", <<$husName>> asks.'
+					'"Help me, he doesn''t stop", you reply.'
 
 					if izvratH = 0:
-						'<<$husName>> tries to pull the dog, but he growls and grins, then he goes into the tub and what that brings an old sheet, threw it at the dog picks up the ends and picks up dog is in improvezirovannom bag.'
-						'"I''ll take him now on euthanasia, " said <<$husName>>'
+						'<<$husName>> tries to pull the dog away from you, but he just growls. Your husband then leaves the room to grab an old bed sheet. He comes back and pulls it over <<$namesob>> head, he then takes a small rope and ties the the ends together. Your dog whimpers while inside the improvised bag.'
+							'"I''ll take him now to the vet and have him put to sleep", <<$husName>> tells you.'
 
-						act 'Allow':
+						act 'Put your dog to sleep':
 							sobaka = 0
 							zoo = 0
 							gt 'sitr'
 						end
 
-						act 'Not authorized':
+						act 'It''s just his instincts!':
 							cla
-							'"No, dear, he is not guilty, he has the instincts, I''ll take it for mating and he will calm down, " you said.'
-							'"Okay, look itself, your dog."'
-
+							'"No dear, it''s not his fault, it''s his instincts, just let him do what he''s supposed to do, he''ll eventually stop", you say.'
+							'"Well, whatever you say."'
 							act 'Finish':gt 'sitr'
 						end
+						
 					elseif izvratH = 1:
 						zoo += 1
 						bj += 1
 						swallow += 1
 						cumlip += 1
-						'"Can not or do not want, " said <<$husName>> smiling and continues to sit and watch as the dog licks you.'
-						'"It probably does not want" you reply and deliberately pushes the legs wider. <<$husName>> looks like you moan until the dog licks you, and suddenly gets up and pulls out his dick brings to your mouth.'
+						'"I''m not going to", <<$husName>> chuckles. He leans back into the chair with a sly grin on his face.'
+						'"He''s not going to stop" you reply and push your legs apart. <<$husName>> looks at, enjoying your soft moans, then he suddenly gets up, pulls out his dick and tells you to suck it.'
 
-						act 'Take by mouth':
+						act 'Blowjob':
 							cla
 							*clr
 							'<center><img src="images/zoo/z3.jpg"></center>'
-							'You grab his cock and takes his mouth to suck, soon begins to cover you and you end sodragayas whole body, a second <<$husName>> ends up in your mouth. You swallow sperm and continue to suck his dick fading. Soused dog began naprygivat you with nedvuhslyslennymi intentions.'
-							'"But this is too much" said <<$husName>> and tried ottoschit dog, but he growls and grins, then he goes into the tub and what that brings old sheets, throwing her to the dog picks up the ends and picks up dog is in improvezirovannom bag.'
-							'"I''ll take him now on euthanasia, " said <<$husName>>'
-
-							act 'Allow':
+							'You grab his cock and take it into your mouth. You suck on his cock for good two to three minutes, until <<$husName>> ends up cumming in your mouth. You swallow his sperm and clean up his cock. As your husband moves away, your dog stops licking your cunt and positions his knot above your face.'
+							'"Wooh, hold on, this goes too far", <<$husName>> says and ties to shoo your dog away, but <<$namesob>> growls at your husband. Your husband then leaves the room to grab an old bed sheet. He comes back and pulls it over <<$namesob>> head, he then takes a small rope and ties the the ends together. Your dog whimpers while inside the improvised bag.'
+							'"I''ll take him now to the vet and have him put to sleep", <<$husName>> tells you.'
+							act 'Put your dog to sleep':
 								sobaka = 0
 								zoo = 0
 								gt 'sitr'
 							end
 
-							act 'Not authorized':
+							act 'It''s just his instincts!':
 								cla
-								'"No, dear, he is not guilty, he has instincts, besides from trying so hard, " you said.'
-								'"Well, if he was trying so hard you can thank him" ironically husband.'
-
-								act 'Jerk dog':
+							'"No dear, it''s not his fault, it''s his instincts, just let him do what he''s supposed to do, he''ll eventually stop", you say.'
+							'"Well, whatever you say."'
+								act 'Jerk your dog off':
 									cla
 									*clr
 									husband -= 1
 									'<center><img src="images/zoo/z6.jpg"></center>'
-									'You take the dog dick in hand and begin to masturbate after a few minutes you dog cums in her palm.'
+									'You take the dogs knot in your hand and begin to stroke it, after a few minutes your dog cums on your hands.'
 
 									act 'Finish':gt 'sitr'
 								end
@@ -268,8 +267,8 @@ if zoo >= 6:
 									swallow += 1
 									husband -= 40
 									'<center><img src="images/zoo/z7.jpg"></center>'
-									'You loshite dog on the floor and take his cock in my mouth, my husband looks at you with disgust as you sucking dog in a couple of minutes dog diluted into your mouth and you swallow sperm.'
-									'"Well, you''re a pervert, " the husband says with obvious distaste.'
+									'You order your <<$namesob>> to rollover on his back, so you can easily put his cock in your mouth. Your husband looks at you with disgust, as you suck off <<$namedog>>. After a few minutes you feel your dogs cock throbbing, as he cums in your mouth.'
+									'"My god, what kind of pervert are you", <<$husName>> asks, with obvious disgust.'
 
 									act 'Finish':gt 'sitr'
 								end
@@ -279,15 +278,15 @@ if zoo >= 6:
 						end
 					end
 				elseif harakHusb = 2:
-					'"Her dog you absolutely ohrenel, go find yourself on the street bitch and then you froze otpihni it" the husband says.'
-					'"I can not, try myself, " you reply.'
+					'"Your dog is absolutely crazy, couldn''t you go out on the streets and find him some bitch to hump?", <<$husName>> asks.'
+					'"Help me, he doesn''t stop", you reply.'
 
 					if izvratH = 0:
 						manna -= 15
 						willpower -= 15
-						'<<$husName>> trying ottoschit dog, but he growls and grins, then he smashes the dog leg in the ribs and he screeched flies into a corner, did not have time to climb dog as man begins to kick harder, seeing his condition, you scored in angle and covering his head with hands close your eyes. A few minutes later the dog stops.'
-						'"What are you hiding there shalt here, and then krovischi from your skunk" said <<$husName>>. Opening her eyes you see a dead dog in a pool of blood.'
-						'"Well, what froze shalt say to you, I do this on the trash Dogmeat''ll take." he takes the dog, wrap in sheets and make it in the trash. And you have some time to scour the blood from the floor.'
+						'<<$husName>> tries to shoo your dog away, but to no avail, instead <<$namesob>> growls angry. Then <<$husName>> kicks your dog into the ribs, he whimpers and your husband continues to kick him over and over again.'
+						'"I better never see you doing something like this ever again.", <<$husName>> says. As you open your eyes you see your dog lying dead on the floor in his own pool of blood.'
+						'"I''m going to take this little shit outside and throw it away", your husband says as he wraps the dog into an old sheet. "Now clean these blood stains up, I don''t want to buy a new carpet.", <<$husName>> orders you, as he makes his way out to the garbage cans.'
 
 						act 'Finish':
 							sobaka = 0
@@ -300,33 +299,35 @@ if zoo >= 6:
 						swallow += 1
 						cumlip += 1
 						SUB += 1
-						'"What do you mean I can not, that you like the way he licks you, " shouts <<$husName>>.'
-						'"No, of course you do not, " you begin to make excuses.'
-						'"And I see you taschishsya whore, you all are flowing, or think I do not see, and if you like it so thank him, " he says, and seeing your not knowing look continues, "Well, what are hatched suck him alive."'
+						'"What do you mean, you can''t stop him? Do you like the way he licks you?", <<$husName>> shouts.'
+						'"No, of course not!", you try to explan.'
+						'"And yet I see you bitch here with your legs spread apart and your juices gushing out of your cunt, while your shitty dog licks your pussy." he says. "Well, you know what, why don''t you show me how much of a bitch you are. Go on, suck his cock."'
 
-						act 'Take by mouth':
+						act 'Suck <<$namesob>> knot':
 							cla
 							*clr
 							'<center><img src="images/zoo/z4.jpg"></center>'
-							'<<$husName>> grabs a dog by the collar iderzhit until you slide on the floor under the dog. Nedozhidayas oplivuhi you hiding his lust take by mouth and takes dick dog suck, husband watching you and cheers saying that the dog loved your mouth. Soon he was bored just watch and he dropped his pants says "Well Spreads legs."'
+							'<<$husName>> grabs your dog by the collar and pulls him up to the couch, so that <<$namesob>> cock is just above your face. You take his knot into your mouth and begin to suck on it. Your husband watches and tells you that the dog loves your bitches mouth.'
+							'It seems like just being part of the audience doesn''t quite satisfy him, so he orders you spread your legs.'
 
-							act 'Allow':
+							act 'Spread your legs':
 								cla
 								*clr
 								suprdolg += 1
 								sex += 1
 								anal += 1
 								'<center><img src="images/zoo/z5.jpg"></center>'
-								'You obediently spreads her legs and her husband comes to you in the pussy, he hews suck you until you have a dog, but you do not dostovlyaet pleasure. Soon her husband cums and gets "A dog that is not yet finished, something you''re not trying, as well, cup your point."'
+								'You obediently spreads your legs apart and your husband pushes his cock into your pussy. The first few times he moves slowly, but soon starts to get very rough. He doesn''t need long to cum inside your pussy'
+								'He looks at the dog, "Seems like that shit isn''t done yet. Let''s try something else, turn around bitch.", he orders. "Let''s see if he like your asshole more than your mouth.'
 
-								act 'Substitute ass':
+								act 'Anal Sex':
 									cla
 									*clr
 									analorgasm += 1
 									orgasm += 1
 									horny = 0
 									'<center><img src="images/zoo/z8.jpg"></center>'
-									'You go up to her knees and dog immediately jumps on you. prevent kneel. With one hand you Spreading buttocks, and a second guide member currently in his ass, fingering hole dog quickly enters and taken to peck your anus. Husband looked at it a little and throwing "Go otmoyus from whores" out. Left with a dog for a single you start podmahivat him and soon oschuzaete tide excitation seems sex dog surpasses her husband, his cock in your ass moves so deftly that comes after the excitement orgasm, and you fall on korachki no longer able to stand, dog makes several movements and spewing his seed you in the ass. After graduating he leaves satisfied.'
+									'You turn around and position yourself on all fours. <<$namesob>> immediately jumps on you, you spread your buttocks apart with one hand. He start to fuck you, thinking you are just another bitch in heat. "That''s a good bitch", your husband comments and leaves the room. Your dog increases in speed, pumping his knot in and out of your ass and you have to admit, it starts to feel really good. For several minutes <<$namesob>> humps your ass, until you eventually climax. Your ass tightens, causing your dog to cum too.'
 
 									act 'Finish':gt 'sitr'
 								end
@@ -358,35 +359,35 @@ if dildo > 0 and horny >= 50:
 				cla
 				*clr
 				'<center><img src="images/img/hasb/m11.jpg"></center>'
-				'You sit on the couch and type dildo their pussy'
+				'You sit down on the couch and push a dildo into your pussy.'
 
-				if hour > 17 and hour <= 22:'<<$husName>> looks at you, obviously a little dumbfounded.'
-				if hour = 16 or hour > 22:'Once you get a taste of how enters the room <<$husName>>'
+				if hour > 17 and hour <= 22:'<<$husName>> looks at you, stunned by your sudden act of lewdness.'
+				if hour = 16 or hour > 22:'<<$husName>> enters the room, after he heard moans from outside.'
 
 				if harakHusb = 0:
-					'"What are you doing dear?" he asks.'
-					'"I''m sorry dear, but I really need, and you''ve been busy, " you reply, without stopping to masturbate.'
-					'"And often you do that, " he asks.'
-					'"Owned so often, less often in the ass, if you want to see?" you asked'
+					'"What are you doing?", <<$husName>> asks.'
+					'"I''m sorry dear, but I really need it and you''re always busy, " you reply, without stopping to masturbate.'
+					'"And how often do you that", he asks.'
+					'"Every now and then, sometimes I put it in the ass too, would you like to watch me?" you ask him'
 
 					if izvratH = 0:
 						husband -= 1
-						'"I''ll wait outside the door until you''re done, " he said and left. You continued to satisfy themselves rapidly and soon finished.'
+						'"I think I''ll step outside until you are done", he says and leaves the apartment. You continue to satisfy yourself, but are a bit sad, he didn''t ''help'' you.'
 						horny = 0
 						orgasm += 1
 
 						act 'Finish':gt 'sitr'
 					elseif izvratH = 1:
-						'"Well, I do not know, " he stammered.'
-						'"So you want" you said'
+						'"Well, I''m...I''m not sure", he stutters.'
+						'"So, what do you want?", you ask'
 
-						act 'Show':
+						act 'Put on a show':
 							cla
 							*clr
 							'<center><img src="images/img/hasb/m12.jpg"></center>'
-							'You pull out the dildo from pussy and winking at her husband, insert a dildo in her anus. <<$husName>> closely watched as a dildo in your ass disappears and then reappears. Do you see how his pants swell.'
-							'"Dear anything else you want?" smiling you ask.'
-							'"Can I join?" a little embarrassed he asks.'
+							'You pull out the dildo from your pussy and wink at your husband, then you push the dildo into your ass. <<$husName>> watches closely as the dildo moves in and out. You notice the obvious buldge in trousers.'
+							'"Dear, is there anything else you want?", you ask, smiling at him.'
+							'"Can I join?", he asks you a little embarrased.'
 
 							act 'Solve':
 								cla
@@ -395,47 +396,48 @@ if dildo > 0 and horny >= 50:
 								orgasm += 1
 								horny = 0
 								'<center><img src="images/img/hasb/m13.jpg"></center>'
-								'<<$husName>> gets dick and starts masturbating, it is not what you expected, and at first you even felt a little sad that he did not enter into you, and began to masturbate, but then you start it even start. Have you looked at her husband who masturbate looking at the way you drive the dildo his popkui be covered and you pleasure, you screamed and fell to the table, having experienced an orgasm, dildo still sticking out of your ass. <<$husName>> yarosno masturbate looking at you stretched out on the table, you took the dildo from ass and began to lick it, looking into the eyes of her husband, from such a spectacle he immediately discharged onto the floor. You are drawn to him sticking out his lips, in a second he had passionately kissed you.'
+								'<<$husName>> takes out his dick and starts to masturbate right infront of you, you''re surprised, because you expected he''d to fuck you or something like that a long the line. You sigh silently and continue to fuck your ass with the dildo. <<$husName>> now masturbates furiously, as you moaning becomes louder. Both of you realize, it won''t be long until either of you cums.'
+								'With a final thrust, it''s you, who experiences the first orgasm and it''s so strong, that you fall off the couch onto the floor. You talk your dildo out of your ass and lick it clean, while locking eyes with your husband. He finds this incredibly erotic and it takes him merely a few more seconds to cum, spraying his salty fluids over the couch and carpet. In the afterbliss of both of your orgasms you kiss each other passionately.'
 
 								act 'Finish':gt 'sitr'
 							end
 						end
 					end
 				elseif harakHusb = 1:
-					'"That''s a number I mean you is not enough?" he asks.'
-					'"I''m sorry dear, but I really need, and you''ve been busy, " you reply, without stopping to masturbate.'
-					'"Well then, show me everything that you know how I''ll look, " he says.'
-					'"And how do I do it in the ass, too, to show?" you asked'
+					'"I guess sex with me isn''t enough?", he asks.'
+					'"I''m sorry dear, but I really need it and you''re always busy", you reply, without stopping to masturbate.'
+					'"Well then, why don''t you show me everything then? I''d love to watch", he says.'
+					'"Do you want to see me putting in my ass too?" you ask'
 
 					if izvratH = 0:
 						husband += 1
 						husbizvradd += 1
-						'"No, do not, and yet that''s enough, " he said, and sat down on a chair began to watch. You continued to satisfy themselves rapidly and soon finished in front of her husband. <<$husName>> stood up and began to applaud "Bravo and encore again?" he said laughing.'
-						'"For such a lovely audience anything, but only after the intermission, " you laughed. <<$husName>> helped you get down from the table.'
+						'"No, not yet, and that''s enough for now", he says and sits down on a chair. You continue to satisfy yourself rapidly and soon orgasm in front of your husband. <<$husName>> applauds you. "Bravo! Care to do it again?", he says chuckling.'
+						'"Anytime for such a lovely audience, but I need a quick break", you laugh and take the dildo out of your pussy.'
 						horny = 0
 						orgasm += 1
 
 						act 'Finish':gt 'sitr'
 					elseif izvratH = 1:
 						husband += 1
-						'"And how is it necessarily demonstrate" he said.'
-						'"Anything you want, " you said'
+						'"And what are you going to show me now?", he asks.'
+						'"Whatever you would like to see", you answer.'
 
-						act 'Show':
+						act 'Put on a show':
 							cla
 							*clr
 							'<center><img src="images/img/hasb/m12.jpg"></center>'
-							'You pull out the dildo from pussy and winking at her husband, insert a dildo in her anus. <<$husName>> closely watched as a dildo in your ass disappears and then reappears. Do you see how his pants swell.'
-							'"Dear anything else you want?" smiling you ask.'
-							'"I do not just want to but I''ll do, " he said, unbuttoning his pants and substitute member of your face.'
+							'You move your dildo slowly into your ass. <<$husName>> watches closely as the dildo moves in and out of your ass. You notice the buldge in his pants.'
+							'It''s hard for you not to look at it, therefore you ask him, if he would like to participate somehow.'
+							'"Now that you ask", he says, "you could blow me, while pump that toy into your ass." So he unbuttons his pants and takes his cock out.'
 
-							act 'Take by mouth':
+							act 'Blowjob':
 								cla
 								*clr
 								'<center><img src="images/img/hasb/m14.jpg"></center>'
-								'You enfold him some more flaccid penis and start sucking lips, continuing to drive the dildo his anus. When his cock finally firmed, <<$husName>> to stop you, "Well, now I''ll take this hole."'
+								'You start to suck on his flaccid penis, while you continue to pleasure yourself, by pumping that dildo in and out of your ass. After a short while, <<$husName>>s dick became rock hard, when it finally is, he says "Time for me to fuck that hole."'
 
-								act 'Substitute ass':
+								act 'Anal Sex':
 									picrand = 88
 									gt 'sex', 'anal'
 								end
@@ -443,30 +445,30 @@ if dildo > 0 and horny >= 50:
 						end
 					end
 				elseif harakHusb = 2:
-					'"What hole itching?" he asks.'
-					'"I''m sorry dear, but I really need, and you''ve been busy, " you reply, without stopping to masturbate.'
+					'"Is your hole itching?" he asks.'
+					'"I''m sorry dear, but I really need it and you''re always busy", you reply, without stopping to masturbate.'
 
 					if izvratH = 0:
 						husband += 1
 						husbizvradd += 1
-						'"Well then, open your mouth, " he said pulling member and rudely pushing it in your mouth, he held you by the hair and fucked in the mouth, saying something you did not stop masturbating. Soon he was tired of your mouth, "Now take out of this hole rubber stuff, now I''m going to fuck you"'
+						'"Well then, open your mouth", he orders you, pulls out his cock and pushes it into your mouth by force. He holds you by the hair and fucks your mouth, while telling you not to stop masturbating. Soon after he becomes tired of your mouth, "Now take out that damn toy, time for me to scratch your itch."'
 
-						act 'Spread her legs ':
+						act 'Spread your legs':
 							picrand = 88
 							gt 'sex', 'vag'
 						end
 					elseif izvratH = 1:
 						husband += 1
 						SUB += 1
-						'"Insert this crap myself in the ass and mash, I''ll popolzuyut it, as long as pine Quick" he said, pulling member. You quickly rearrange the dildo from pussy anus and mouth open submissively.'
+						'<<$husName>> orders you to put your toy into your ass and you submissivly oblige to do so. "Now open you mouth and suck me off", he tells you.'
 
-						act 'Take by mouth':
+						act 'Blowjob':
 							cla
 							*clr
 							'<center><img src="images/img/hasb/m14.jpg"></center>'
-							'You enfold him some more flaccid penis and start sucking lips, continuing to drive the dildo his anus. When his cock finally firmed, <<$husName>> stopped you "All cup your point now I''m ass Flare."'
+								'You start to suck on his flaccid penis, while you continue to pleasure yourself, by pumping that dildo in and out of your ass. After a short while, <<$husName>>s dick became rock hard, when it finally is, he says "Time for me to fuck your ass-pussy."'
 
-							act 'Substitute ass':
+							act 'Anal Sex':
 								picrand = 88
 								gt 'sex', 'anal'
 							end
@@ -477,7 +479,7 @@ if dildo > 0 and horny >= 50:
 				horny = 0
 				orgasm += 1
 				'<center><img src="images/pics/mastr.gif"></center>'
-				'You dildo stuck to the floor and planted her wet pussy on him, jumping on the artificial active member you will quickly feel the excitement and orgasm you covered.'
+				'You put your dildo on the floor and start to ride it. It moves in and out and you feel the pleasure running through your entire body with each thrust. You begin to moan and a few minutes later you climax and a wave of pleasure runs through your entire body.'
 
 				act 'Breath.':gt 'sitr'
 			end
@@ -485,7 +487,7 @@ if dildo > 0 and horny >= 50:
 			horny = 0
 			orgasm += 1
 			'<center><img src="images/pics/mastr.gif"></center>'
-			'You dildo stuck to the floor and planted her wet pussy on him, jumping on the artificial active member you will quickly feel the excitement and orgasm you covered.'
+				'You put your dildo on the floor and start to ride it. It moves in and out and you feel the pleasure running through your entire body with each thrust. You begin to moan and a few minutes later you climax and a wave of pleasure runs through your entire body.'
 
 			act 'Breath.':gt 'sitr'
 		end
@@ -550,7 +552,7 @@ if $ARGS [0] ='guest':
 				$ImageNeededPlacholder
 				! WD: IMAGE NEEDED ~ '<center><img src="images/img/house/g3.jpg"></center>'
 				'You do not resist, and he continues to grope you, you will soon have a third on while he caresses your bare breasts, you will no longer restrain himself vsilu and turned to him, running his hand into his pants and pulled out a member. He sticks out his tongue and lips around his you start to suck at the same time masturbate him.'
-				act 'Take by mouth':
+				act 'Blowjob':
 					cla
 					*clr
 					$ImageNeededPlacholder
