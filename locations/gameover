@@ -2,8 +2,7 @@
 '<center><b><font color="maroon">GAME OVER</font></b></center>'
 
 if over = 1:
-	gs 'stat'
-	'You died'
+	'You died. (no health left)'
 elseif over = 2:
 	'<center><img src="images/etogame/over.jpg"></center>'
 	'You''re mad and started to run around town naked screaming "I am a man!". You quickly alerted the police and you were taken to a metal hospital. There you got put in a straitjacket and placed in a room with soft walls. You spent the rest of your days in happy delusions about your family and about being a man again. But the delusions never became reality.'
